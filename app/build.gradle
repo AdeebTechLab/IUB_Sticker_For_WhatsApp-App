@@ -5,13 +5,13 @@ android {
     aaptOptions {
         noCompress "webp"
     }
-    compileSdkVersion 33
+    compileSdkVersion 34
     defaultConfig {
         applicationId "com.AdeebTechLab.IUBWhatsAppSticker"
         minSdkVersion 23
-        targetSdkVersion 33
-        versionCode 2
-        versionName "2.0"
+        targetSdkVersion 34
+        versionCode 3
+        versionName "3.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         def contentProviderAuthority = applicationId + ".stickercontentprovider"
         // Creates a placeholder property to use in the manifest.
@@ -43,6 +43,7 @@ android {
         exclude 'lib/*/libnative-imagetranscoder.so'
         exclude 'lib/*/libnative-filters.so'
     }
+    namespace 'com.AdeebTechLab.IUBWhatsAppSticker'
 
     // Configures multiple APKs based on ABI.
     // see https://developer.android.com/studio/build/configure-apk-splits#configure-abi-split
