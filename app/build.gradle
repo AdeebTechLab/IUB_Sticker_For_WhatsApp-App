@@ -5,13 +5,13 @@ android {
     aaptOptions {
         noCompress "webp"
     }
-    compileSdkVersion 34
+    compileSdkVersion 35
     defaultConfig {
         applicationId "com.AdeebTechLab.IUBWhatsAppSticker"
         minSdkVersion 23
-        targetSdkVersion 34
-        versionCode 3
-        versionName "3.0"
+        targetSdkVersion 35
+        versionCode 4
+        versionName "0.4"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         def contentProviderAuthority = applicationId + ".stickercontentprovider"
         // Creates a placeholder property to use in the manifest.
