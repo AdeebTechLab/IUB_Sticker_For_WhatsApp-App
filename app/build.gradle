@@ -10,8 +10,8 @@ android {
         applicationId "com.AdeebTechLab.IUBWhatsAppSticker"
         minSdkVersion 23
         targetSdkVersion 36
-        versionCode 7
-        versionName "0.7"
+        versionCode 8
+        versionName "0.8"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         def contentProviderAuthority = applicationId + ".stickercontentprovider"
         // Creates a placeholder property to use in the manifest.
@@ -40,6 +40,9 @@ android {
     }
 
     packagingOptions {
+        jniLibs {
+            useLegacyPackaging true
+        }
         exclude 'lib/*/libnative-imagetranscoder.so'
         exclude 'lib/*/libnative-filters.so'
     }
