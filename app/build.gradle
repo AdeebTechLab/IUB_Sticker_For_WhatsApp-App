@@ -3,15 +3,15 @@ apply plugin: 'com.android.application'
 android {
     //the compression of webp file during build causes problem with FileDescriptor in ContentProvider.
     aaptOptions {
-        noCompress "webp"
+        noCompress "webp", ".so"
     }
     compileSdkVersion 36
     defaultConfig {
         applicationId "com.AdeebTechLab.IUBWhatsAppSticker"
         minSdkVersion 23
         targetSdkVersion 36
-        versionCode 8
-        versionName "0.8"
+        versionCode 10
+        versionName "0.1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         def contentProviderAuthority = applicationId + ".stickercontentprovider"
         // Creates a placeholder property to use in the manifest.
@@ -41,10 +41,8 @@ android {
 
     packagingOptions {
         jniLibs {
-            useLegacyPackaging true
+            useLegacyPackaging false
         }
-        exclude 'lib/*/libnative-imagetranscoder.so'
-        exclude 'lib/*/libnative-filters.so'
     }
     namespace 'com.AdeebTechLab.IUBWhatsAppSticker'
 
@@ -117,11 +115,11 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.2.1'
 
 
-    implementation 'com.facebook.soloader:soloader:0.12.1'
+    implementation 'com.facebook.soloader:soloader:0.10.5'
 
 
 
-    def fresco_version = '2.5.0'
+    def fresco_version = '3.2.0'
     //noinspection NewerVersionAvailable,GradleDependency
     implementation "com.facebook.fresco:fresco:$fresco_version"
     //noinspection NewerVersionAvailable,Aligned16KB,GradleDependency
