@@ -1,21 +1,32 @@
 # Add project specific ProGuard rules here.
-# You can control the set of applied configuration files using the
-# proguardFiles setting in build.gradle.
-#
-# For more details, see
-#   http://developer.android.com/guide/developing/tools/proguard.html
+# You can find more details about ProGuard in the official documentation:
+# https://www.guardsquare.com/en/products/proguard/manual/introduction
 
-# If your project uses WebView with JS, uncomment the following
-# and specify the fully qualified class name to the JavaScript interface
-# class:
-#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
-#   public *;
-#}
+# Keep all public classes and methods that are used in your XML layout files.
+-keep class **.R$* {
+    *;
+}
 
-# Uncomment this to preserve the line number information for
-# debugging stack traces.
-#-keepattributes SourceFile,LineNumberTable
+# Keep all classes that are used as parameters in your layouts.
+-keep public class * extends android.view.View {
+    public <init>(android.content.Context);
+    public <init>(android.content.Context, android.util.AttributeSet);
+    public <init>(android.content.Context, android.util.AttributeSet, int);
+    public void set*(...);
+}
 
-# If you keep the line number information, uncomment this to
-# hide the original source file name.
-#-renamesourcefileattribute SourceFile
+# Keep the R file classes, which are used to access resources.
+-keep class **.R
+-keep class **.R$*
+
+# Keep the following classes for Fresco
+-keep class com.facebook.infer.annotation.** { *; }
+-keep class * extends com.facebook.common.internal.DoNotStrip {
+    *;
+}
+
+# Keep the following classes for animated WebP
+-keep class com.facebook.animated.webp.** { *; }
+
+# Keep the following classes for animated GIF
+-keep class com.facebook.animated.gif.** { *; }
