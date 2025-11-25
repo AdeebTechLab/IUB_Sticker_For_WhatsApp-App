@@ -3,7 +3,7 @@
   "ios_app_store_link": "",
   "sticker_packs": [
     {
-      "identifier": "1IUB",
+      "identifier": "1",
       "name": "IUB",
       "publisher": "Salman Adeeb",
       "tray_image_file": "logo.png",
@@ -65,7 +65,7 @@
       ]
     },
 {
-      "identifier": "2Logo",
+      "identifier": "2",
       "name": "Logo",
       "publisher": "Salman Adeeb",
       "tray_image_file": "logo.png",
@@ -199,7 +199,7 @@
       ]
     },
     {
-      "identifier": "3Faculty_Teacher",
+      "identifier": "3",
       "name": "Faculty Teacher",
       "publisher": "Salman Adeeb",
       "tray_image_file": "logo.png",
@@ -273,8 +273,8 @@
       ]
     },
     {
-      "identifier": "4Dept_Information_Security",
-      "name": "Dept Information Security",
+      "identifier": "4",
+      "name": "Dept Info Security",
       "publisher": "Salman Adeeb",
       "tray_image_file": "logo.png",
       "image_data_version": "1",
@@ -387,8 +387,8 @@
       ]
     },
     {
-      "identifier": "5Computing_Students_Society",
-      "name": "Computing Students Society",
+      "identifier": "5",
+      "name": "Computing Society",
       "publisher": "Salman Adeeb",
       "tray_image_file": "logo.png",
       "image_data_version": "1",
@@ -509,7 +509,7 @@
       ]
     },
 {
-      "identifier": "6Students_Affairs",
+      "identifier": "6",
       "name": "Students Affairs",
       "publisher": "Salman Adeeb",
       "tray_image_file": "logo.png",
@@ -535,7 +535,7 @@
       ]
     },
     {
-      "identifier": "Update",
+      "identifier": "7",
       "name": "Ager apky pas koi IUB kay achy achy Sticker ha ya ap new bnaky is app may add karwa sakty ho Free. 030 92 333 121",
       "publisher": "Salman Adeeb",
       "tray_image_file": "logo.png",
